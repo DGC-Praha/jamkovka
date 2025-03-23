@@ -33,9 +33,12 @@ body {font-family: 'Istok Web', sans-serif;background: #013c98;margin: 0;}
 .share-wrap {max-width: 1100px; text-align: center; margin: 60px auto;}
 .final {margin: 4.5em 0;}
 .hidden {visibility: hidden;}
-h2 a {padding: 5px; text-decoration: none; border: solid 1px;}
+h2 a {padding: 5px; text-decoration: none; border: solid 1px; display: inline-block;}
 h2 a.active, a.inactive:hover {color: #013c98; background-color: #fff;}
 h2 a.inactive {color: #fff; background-color: #144189;}
+.registered-players-table {margin: auto; border-collapse: collapse;}
+.registered-players-table th {background-color: #013c98; color: #fff; padding: 10px; text-align: left;}
+.registered-players-table td {border-bottom: 1px solid #013c98; padding: 10px;}
 
 @-webkit-keyframes pulse {
   0% {
