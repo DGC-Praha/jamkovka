@@ -39,6 +39,8 @@ h2 a.inactive {color: #fff; background-color: #144189;}
 .registered-players-table {margin: auto; border-collapse: collapse;}
 .registered-players-table th {background-color: #013c98; color: #fff; padding: 10px; text-align: left;}
 .registered-players-table td {border-bottom: 1px solid #013c98; padding: 10px;}
+.regform-link {display: inline-block; background-color: #013c98; color: #fff; padding: 7px 12px; text-decoration: none;}
+.regform-link:hover {background-color: #0056e1; color: #c4c4c4;}
 
 @-webkit-keyframes pulse {
   0% {
