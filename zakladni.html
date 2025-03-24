@@ -33,6 +33,9 @@
 
 
 	<section id="bracket">
+
+	<div class="spinner text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+
 	<div class="container">
 	<div class="split split-one">
 
@@ -1455,8 +1458,8 @@
 	</section>
 	<section class="share">
 			<div class="share-wrap">
-				<a class="share-icon" href="https://www.facebook.com/dgcpraha"><i class="fa fa-facebook"></i></a>
-				<a class="share-icon" href="https://www.instagram.com/discgolfclubpraha"><i class="fa fa-instagram"></i></a>
+				<a class="share-icon" target="_blank" href="https://www.facebook.com/dgcpraha"><i class="fa fa-facebook"></i></a>
+				<a class="share-icon" target="_blank" href="https://www.instagram.com/discgolfclubpraha"><i class="fa fa-instagram"></i></a>
 			</div>
 	</section>
 
@@ -1471,6 +1474,8 @@
 
 	
 	$.getJSON(api_endpoint, function(data) {
+		$('.spinner').remove();
+
 		$.each(data, function(key, val) {
 			$('#' + key).text(val[0]);
 			$('#' + key).next().text(val[1]);
