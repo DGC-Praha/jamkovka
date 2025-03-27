@@ -66,7 +66,7 @@
 	$.getJSON(api_endpoint, function(data) {
 		$('.spinner').remove();
 
-		let row = "<tr><th></th><th>Jméno</th><th>Rating</th></tr>";
+		let row = "<tr><th></th><th>Jméno</th><th>Rating</th><th>Placeno</th></tr>";
 		$('#registered-players-table').append(row);
 
 		$.each(data, function(key, val) {
@@ -74,7 +74,8 @@
 				let row = `<tr>
 					<td>${counter}</td>
 					<td>${val[0]}</td>
-					<td>${val[1]}</td>
+					<td class='text-center'>${val[1]}</td>
+					<td class='text-center'>${val[2] ? '<i class="fa fa-check"></i>' : ''}</td>
 				</tr>`;
 				$('#registered-players-table').append(row);
 				counter++;
