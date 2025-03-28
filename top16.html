@@ -15,7 +15,6 @@
 <body>
 	<header class="hero">
 	<div class="hero-wrap">
-	 <!-- <p class="intro" id="intro">flexbox</p> -->
 	
 		<img src="https://dgcp.cz/img/logo/dgcp-logo-final-white.png" alt="DGCP logo" class="logo">
 		<h1 id="headline">DGCP Jamkovka</h1>
@@ -281,12 +280,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-	// script to fetch data from the server and fill the cells above using element id as a lookup key
-	// the data is in the form of a json object
-
 	api_endpoint = 'https://script.google.com/macros/s/AKfycbwUO1kHosVDA9IRp4uj5VpV66r3mOhOewwOKtItXLUMEZDts6iTUfdPkUrfYtHbZpQT/exec';
 
-	
 	$.getJSON(api_endpoint, function(data) {
 		$('.spinner').remove();
 
