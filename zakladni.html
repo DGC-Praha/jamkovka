@@ -25,7 +25,7 @@
 			<a class="inactive" href="index.html">Propozice</a>
 			<a class="inactive" href="registrovani.html">Registrovaní hráči</a>
 			<a class="active" href="zakladni.html">Základní část</a>
-			<a class="inactive" href="top16.html">TOP 16</a>
+			<a class="inactive" href="top8.html">TOP 8</a>
 		</h2>
 	</div>
 	</header>
@@ -93,337 +93,151 @@
 			<ul class="matchup">
 				B1a
 				<li class="team team-top">		
-					(B1) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="B1">			(B1)	</span>
+					<span class="score" id="B1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(B8) 	
-					<span class="score">    &nbsp;  </span>
+					<span id="B8">			(B8)	</span> 	
+					<span class="score" id="B8-score">    &nbsp;  </span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
 				B1b
 				<li class="team team-top">		
-					(B2) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="B2">			(B2)	</span>	
+					<span class="score" id="B2-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(B7)		
-					<span class="score">	&nbsp;	</span>
+					<span id="B7">			(B7)	</span>		
+					<span class="score" id="B7-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
 				B1c
 				<li class="team team-top">		
-					(B3)		
-					<span class="score">	&nbsp;	</span>
+					<span id="B3">			(B3)	</span>	
+					<span class="score" id="B3-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(B6)		
-					<span class="score">	&nbsp;	</span>
+					<span id="B6">			(B6)	</span>		
+					<span class="score" id="B6-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
 				B1d
 				<li class="team team-top">		
-					(B4)	
-					<span class="score">	&nbsp;	</span>
+					<span id="B4">			(B4)	</span>	
+					<span class="score" id="B4-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(B5)	
-					<span class="score">	&nbsp;	</span>
+					<span id="B5">			(B5)	</span>	
+					<span class="score" id="B5-score">	&nbsp;	</span>
 				</li>
-			</ul>	
-
-			<ul class="matchup">
-				C1a
-				<li class="team team-top">		
-					(C1) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(C8) 	
-					<span class="score">    &nbsp;  </span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				C1b
-				<li class="team team-top">		
-					(C2) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(C7)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				C1c
-				<li class="team team-top">		
-					(C3)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(C6)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-
-			<ul class="matchup">
-				C1d
-				<li class="team team-top">		
-					(C2)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(C5)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				D1a
-				<li class="team team-top">		
-					(D1)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(D8)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-
-			<ul class="matchup">
-				D1b
-				<li class="team team-top">		
-					(D2) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(D7) 	
-					<span class="score">    &nbsp;  </span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				D1c
-				<li class="team team-top">		
-					(D3) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(D6)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				D1d
-				<li class="team team-top">		
-					(D4)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(D5)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>											
+			</ul>								
 		</div>	
 		<!-- END ROUND 1 -->
 
 		<!-- ROUND 2 -->
-		<div class="round round-one">
+		<div class="round round-one current">
 			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2"></span></div>		
 			<!-- Pool A	 -->
 			<ul class="matchup">
 				A2a
 				<li class="team team-top">
-					<span id="WA1a">	(WA1)	</span>
-					<span class="score">	&nbsp;	</span>
+					<span id="A2a-1">	WA1a	</span>
+					<span class="score" id="A2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WA1d
-					<span class="score">	&nbsp;	</span>
+					<span id="A2a-2">	WA1d	</span>
+					<span class="score" id="A2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				A2b
 				<li class="team team-top">
-					WA1b
-					<span class="score">	&nbsp;	</span>
+					<span id="A2b-1">	WA1b	</span>
+					<span class="score" id="A2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WA1c
-					<span class="score">	&nbsp;	</span>
+					<span id="A2b-2">	WA1c	</span>
+					<span class="score" id="A2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>		
 			<ul class="matchup">
 				Ar1a
 				<li class="team team-top">
-					LA1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar1a-1">	LA1a	</span>
+					<span class="score" id="Ar1a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LA1d
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar1a-2">	LA1d	</span>
+					<span class="score" id="Ar1a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Ar1b
 				<li class="team team-top">
-					LA1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar1b-1">	LA1b	</span>
+					<span class="score" id="Ar1b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LA1c
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar1b-2">	LA1c	</span>
+					<span class="score" id="Ar1b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<!-- Pool B	 -->	
 			<ul class="matchup">
 				B2a
 				<li class="team team-top">
-					WB1a
-					<span class="score">	&nbsp;	</span>
+					<span id="B2a-1">	WB1a	</span>
+					<span class="score" id="B2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WB1d
-					<span class="score">	&nbsp;	</span>
+					<span id="B2a-2">	WB1d	</span>
+					<span class="score" id="B2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				B2b
 				<li class="team team-top">
-					WB1b
-					<span class="score">	&nbsp;	</span>
+					<span id="B2b-1">	WB1b	</span>
+					<span class="score" id="B2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WB1c
-					<span class="score">	&nbsp;	</span>
+					<span id="B2b-2">	WB1c	</span>
+					<span class="score" id="B2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>		
 			<ul class="matchup">
 				Br1a
 				<li class="team team-top">
-					LB1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Br1a-1">	LB1a	</span>
+					<span class="score" id="Br1a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LB1d
-					<span class="score">	&nbsp;	</span>
+					<span id="Br1a-2">	LB1d	</span>
+					<span class="score" id="Br1a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Br1b
 				<li class="team team-top">
-					LB1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Br1b-1">	LB1b	</span>
+					<span class="score" id="Br1b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LB1c
-					<span class="score">	&nbsp;	</span>
+					<span id="Br1b-2">	LB1c	</span>
+					<span class="score" id="Br1b-2-score">	&nbsp;	</span>
 				</li>
-			</ul>
-			<!-- Pool C	 -->	
-			<ul class="matchup">
-				C2a
-				<li class="team team-top">
-					WC1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WC1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				C2b
-				<li class="team team-top">
-					WC1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WC1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<ul class="matchup">
-				Cr1a
-				<li class="team team-top">
-					LC1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LC1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Cr1b
-				<li class="team team-top">
-					LC1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LC1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<!-- Pool D	 -->
-			<ul class="matchup">
-				D2a
-				<li class="team team-top">
-					WD1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WD1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				D2b
-				<li class="team team-top">
-					WD1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WD1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<ul class="matchup">
-				Dr1a
-				<li class="team team-top">
-					LD1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LD1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Dr1b
-				<li class="team team-top">
-					LD1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LD1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>								
+			</ul>			
 		</div>	
 		<!-- END ROUND 2 -->
 		
 		<!-- ROUND 2 REPAIRS -->
-		<div class="round round-one">
+		<div class="round round-one current">
 			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs"></span></div>	
 			<!-- Pool A		 -->
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
@@ -431,23 +245,23 @@
 			<ul class="matchup">
 				Ar2a
 				<li class="team team-top">
-					LA2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar2a-1">	LA2a	</span>
+					<span class="score" id="Ar2a-1-score">	&nbsp;	</span>			
 				</li>
 				<li class="team team-bottom">
-					WAr1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar2a-2">	WAr1a	</span>
+					<span class="score" id="Ar2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Ar2b
 				<li class="team team-top">
-					LA2a
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar2b-1">	LA2a	</span>
+					<span class="score" id="Ar2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WAr1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar2b-2">	WAr1b	</span>
+					<span class="score" id="Ar2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<!-- Pool B		 -->
@@ -456,287 +270,139 @@
 			<ul class="matchup">
 				Br2a
 				<li class="team team-top">
-					LB2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Br2a-1">	LB2b	</span>
+					<span class="score" id="Br2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WBr1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Br2a-2">	WBr1a	</span>
+					<span class="score" id="Br2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Br2b
 				<li class="team team-top">
-					LB2a
-					<span class="score">	&nbsp;	</span>
+					<span id="Br2b-1">	LB2a	</span>
+					<span class="score" id="Br2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WBr1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<!-- Pool C		 -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Cr2a
-				<li class="team team-top">
-					LC2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WCr1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Cr2b
-				<li class="team team-top">
-					LC2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WCr1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool D		 -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Dr2a
-				<li class="team team-top">
-					LD2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WDr1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Dr2b
-				<li class="team team-top">
-					LD2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WDr1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Br2b-2">	WBr1b	</span>
+					<span class="score" id="Br2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>							
 		</div>	
 		<!-- END ROUND 2 REPAIRS -->	
 		
 		<!-- ROUND 3 -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3"></span></div>	
 			<!-- Pool A	 -->
 			<ul class="matchup">
 				A3
-				<li class="team team-top">      
-					WA2a
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">   
+					<span id="A3-1">	WA2a	</span>
+					<span class="score" id="A3-1-score">	&nbsp;	</span>   
 				</li>
-				<li class="team team-bottom">   
-					WA2b
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-bottom"> 
+					<span id="A3-2">	WA2b	</span>
+					<span class="score" id="A3-2-score">	&nbsp;	</span>  
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Ar3
-				<li class="team team-top">      
-					WAr2a
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">  
+					<span id="Ar3-1">	WAr2a	</span>
+					<span class="score" id="Ar3-1-score">	&nbsp;	</span>    
 				</li>
 				<li class="team team-bottom">   
-					WAr2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar3-2">	WAr2b	</span>
+					<span class="score" id="Ar3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<!-- Pool B	 -->
 			<ul class="matchup">
 				B3
-				<li class="team team-top">      
-					WB2a
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">   
+					<span id="B3-1">	WB2a	</span>
+					<span class="score" id="B3-1-score">	&nbsp;	</span>   
 				</li>
 				<li class="team team-bottom">   
-					WB2b
-					<span class="score">	&nbsp;	</span>
+					<span id="B3-2">	WB2b	</span>
+					<span class="score" id="B3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				Br3
-				<li class="team team-top">      
-					WBr2a
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">
+					<span id="Br3-1">	WBr2a	</span>
+					<span class="score" id="Br3-1-score">	&nbsp;	</span>      
 				</li>
 				<li class="team team-bottom">   
-					WBr2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool C	 -->
-			<ul class="matchup">
-				C3
-				<li class="team team-top">      
-					WC2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WC2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Cr3
-				<li class="team team-top">      
-					WCr2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WCr2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool D	 -->
-			<ul class="matchup">
-				D3
-				<li class="team team-top">      
-					WD2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WD2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Dr3
-				<li class="team team-top">      
-					WDr2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WDr2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Br3-2">	WBr2b	</span>
+					<span class="score" id="Br3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 		</div>	
 		<!-- END ROUND 3 -->	
 		
 		<!-- ROUND 3 REPAIRS -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs"></span></div>	
 			<!-- Pool A	 -->		
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
 			<ul class="matchup">
 				Ar4
-				<li class="team team-top">      
-					LA3
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">    
+					<span id="Ar4-1">	LA3	</span>
+					<span class="score" id="Ar4-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">   
-					WAr3
-					<span class="score">	&nbsp;	</span>
+					<span id="Ar4-2">	WAr3	</span>
+					<span class="score" id="Ar4-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<!-- POOL B -->
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
 			<ul class="matchup">
 				Br4
-				<li class="team team-top">      
-					LB3
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-top">  
+					<span id="Br4-1">	LB3	</span>
+					<span class="score" id="Br4-1-score">	&nbsp;	</span>    
 				</li>
-				<li class="team team-bottom">   
-					WBr3
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- POOL C -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Cr4
-				<li class="team team-top">      
-					LC3
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WCr3
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- POOL D -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Dr4
-				<li class="team team-top">      
-					LD3
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WDr3
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-bottom"> 
+					<span id="Br4-2">	WBr3	</span>
+					<span class="score" id="Br4-2-score">	&nbsp;	</span>
 				</li>
 			</ul>									
 		</div>	
 		<!-- END ROUND 3 REPAIRS -->	
 		
 		<!-- STAGE 1 ADVANCES -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">Postupující<br/><span class="date"></span></div>	
 			<!-- Pool A	 -->		
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WA3
+					<span id="AdvanceA1">			WA3</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WAr4
+					<span id="AdvanceA2">			WAr4</span>
 				</li>
 			</ul>	
 			<!-- Pool B	 -->
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WB3
+					<span id="AdvanceB1">			WB3</span>
 				</li>
 			</ul>
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WBr4
-				</li>
-			</ul>
-			<!-- Pool C	 -->
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WC3
-				</li>
-			</ul>
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WCr4
-				</li>
-			</ul>
-			<!-- Pool D	 -->
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WD3
-				</li>
-			</ul>
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WDr4
+					<span id="AdvanceB2"> 			WBr4</span>
 				</li>
 			</ul>
 		</div>	
@@ -748,706 +414,372 @@
 	<div class="split split-two">
 
 		<!-- STAGE 1 ADVANCES -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">Postupující<br/><span class="date"></span></div>	
-			<!-- Pool E	 -->		
+			<!-- Pool C	 -->		
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WE3
+					<span id="AdvanceC1">			WC3</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WEr4
+					<span id="AdvanceC2">			WCr4</span>
 				</li>
 			</ul>	
-			<!-- Pool F	 -->
+			<!-- Pool D	 -->
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WF3
+					<span id="AdvanceD1">			WD3</span>
 				</li>
 			</ul>
 			<ul class="matchup">
 				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
 				<li class="team team-bottom">
-					WFr4
-				</li>
-			</ul>
-			<!-- Pool G -->
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WG3
-				</li>
-			</ul>
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WGr4
-				</li>
-			</ul>
-			<!-- Pool H	 -->
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WH3
-				</li>
-			</ul>
-			<ul class="matchup">
-				<li class="team team-top hidden">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">
-					WHr4
+					<span id="AdvanceD2">			WDr4</span>
 				</li>
 			</ul>
 		</div>	
 		<!-- END ADVANCES -->	
 
 		<!-- ROUND 3 REPAIRS -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
-			<!-- Pool E	 -->		
+			<!-- Pool C	 -->		
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
 			<ul class="matchup">
-				Er4
-				<li class="team team-top">      
-					LE3
-					<span class="score">	&nbsp;	</span>
+				Cr4
+				<li class="team team-top">   
+					<span id="Cr4-1">	LC3	</span>  
+					<span class="score" id="Cr4-1-score">	&nbsp;	</span> 
 				</li>
 				<li class="team team-bottom">   
-					WEr3
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr4-2">	WCr3	</span>
+					<span class="score" id="Cr4-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
-			<!-- POOL F -->
+			<!-- POOL D -->
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
 			<ul class="matchup">
-				Fr4
-				<li class="team team-top">      
-					LF3
-					<span class="score">	&nbsp;	</span>
+				Dr4
+				<li class="team team-top">
+					<span id="Dr4-1">	LD3	</span>
+					<span class="score" id="Dr4-1-score">	&nbsp;	</span>      
 				</li>
 				<li class="team team-bottom">   
-					WFr3
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr4-2">	WDr3	</span>
+					<span class="score" id="Dr4-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
-			<!-- POOL G -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Gr4
-				<li class="team team-top">      
-					LG3
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WGr3
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- POOL H -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Hr4
-				<li class="team team-top">      
-					LH3
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WHr3
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>									
 		</div>	
 		<!-- END ROUND 3 REPAIRS -->	
 
 		<!-- ROUND 3 -->
-		<div class="round round-two">
+		<div class="round round-two current">
 			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-2"></span></div>	
-			<!-- Pool E	 -->
+			<!-- Pool C	 -->
 			<ul class="matchup">
-				E3
-				<li class="team team-top">      
-					WE2a
-					<span class="score">	&nbsp;	</span>
+				C3
+				<li class="team team-top">
+					<span id="C3-1">	WC2a	</span>      
+					<span class="score" id="C3-1-score">	&nbsp;	</span>
 				</li>
-				<li class="team team-bottom">   
-					WE2b
-					<span class="score">	&nbsp;	</span>
+				<li class="team team-bottom">  
+					<span id="C3-2">	WC2b	</span>
+					<span class="score" id="C3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Er3
-				<li class="team team-top">      
-					WEr2a
-					<span class="score">	&nbsp;	</span>
+				Cr3
+				<li class="team team-top">   
+					<span id="Cr3-1">	WCr2a	</span>
+					<span class="score" id="Cr3-1-score">	&nbsp;	</span>   
 				</li>
 				<li class="team team-bottom">   
-					WEr2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr3-2">	WCr2b	</span>
+					<span class="score" id="Cr3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
-			<!-- Pool F	 -->
+			<!-- Pool D	 -->
 			<ul class="matchup">
-				F3
-				<li class="team team-top">      
-					WF2a
-					<span class="score">	&nbsp;	</span>
+				D3
+				<li class="team team-top"> 
+					<span id="D3-1">	WD2a	</span>
+					<span class="score" id="D3-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">   
-					WF2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Fr3
-				<li class="team team-top">      
-					WFr2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WFr2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool G	 -->
-			<ul class="matchup">
-				G3
-				<li class="team team-top">      
-					WG2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WG2b
-					<span class="score">	&nbsp;	</span>
+					<span id="D3-2">	WD2b	</span>
+					<span class="score" id="D3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Gr3
-				<li class="team team-top">      
-					WGr2a
-					<span class="score">	&nbsp;	</span>
+				Dr3
+				<li class="team team-top">     
+					<span id="Dr3-1">	WDr2a	</span>
+					<span class="score" id="Dr3-1-score">	&nbsp;	</span> 
 				</li>
 				<li class="team team-bottom">   
-					WGr2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool H	 -->
-			<ul class="matchup">
-				H3
-				<li class="team team-top">      
-					WH2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WH2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Hr3
-				<li class="team team-top">      
-					WHr2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">   
-					WHr2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr3-2">	WDr2b	</span>
+					<span class="score" id="Dr3-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 		</div>	
 		<!-- END ROUND 3 -->	
 		 
 		<!-- ROUND 2 REPAIRS -->
-		<div class="round round-one">
+		<div class="round round-one current">
 			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
-			<!-- Pool E		 -->
+			<!-- Pool C		 -->
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
 			<ul class="matchup">
-				Er2a
+				Cr2a
 				<li class="team team-top">
-					LE2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr2a-1">	LC2b	</span>
+					<span class="score" id="Cr2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WEr1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr2a-2">	WCr1a	</span>
+					<span class="score" id="Cr2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Er2b
+				Cr2b
 				<li class="team team-top">
-					LE2a
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr2b-1">	LC2a	</span>
+					<span class="score" id="Cr2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WEr1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr2b-2">	WCr1b	</span>
+					<span class="score" id="Cr2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
-			<!-- Pool F		 -->
+			<!-- Pool D		 -->
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
 			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
 			<ul class="matchup">
-				Fr2a
+				Dr2a
 				<li class="team team-top">
-					LF2b
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr2a-1">	LD2b	</span>
+					<span class="score" id="Dr2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WFr1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr2a-2">	WDr1a	</span>
+					<span class="score" id="Dr2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Fr2b
+				Dr2b
 				<li class="team team-top">
-					LF2a
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr2b-1">	LD2a	</span>
+					<span class="score" id="Dr2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WFr1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr2b-2">	WDr1b	</span>
+					<span class="score" id="Dr2b-2-score">	&nbsp;	</span>
 				</li>
-			</ul>		
-			<!-- Pool G		 -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Gr2a
-				<li class="team team-top">
-					LG2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WGr1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Gr2b
-				<li class="team team-top">
-					LG2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WGr1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<!-- Pool H		 -->
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>	
-			<ul class="matchup hidden">X<li class="team team-top">&nbsp;</li><li class="team team-bottom">&nbsp;</li></ul>		
-			<ul class="matchup">
-				Hr2a
-				<li class="team team-top">
-					LH2b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WHr1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Hr2b
-				<li class="team team-top">
-					LH2a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WHr1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>							
+			</ul>				
 		</div>	
-		<!-- ENH ROUNH 2 REPAIRS -->	
+		<!-- ENH ROUND 2 REPAIRS -->	
 		 
-		<!-- ROUNH 2 -->
-		<div class="round round-one">
+		<!-- ROUND 2 -->
+		<div class="round round-one current">
 			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
-			<!-- Pool E	 -->
+			<!-- Pool C	 -->
 			<ul class="matchup">
-				E2a
+				C2a
 				<li class="team team-top">
-					WE1a
-					<span class="score">	&nbsp;	</span>
+					<span id="C2a-1">	WC1a	</span>
+					<span class="score" id="C2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WE1d
-					<span class="score">	&nbsp;	</span>
+					<span id="C2a-2">	WC1d	</span>
+					<span class="score" id="C2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				E2b
+				C2b
 				<li class="team team-top">
-					WE1b
-					<span class="score">	&nbsp;	</span>
+					<span id="C2b-1">	WC1b	</span>
+					<span class="score" id="C2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WE1c
-					<span class="score">	&nbsp;	</span>
+					<span id="C2b-2">	WC1c	</span>
+					<span class="score" id="C2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>		
 			<ul class="matchup">
-				Er1a
+				Cr1a
 				<li class="team team-top">
-					LE1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr1a-1">	LC1a	</span>
+					<span class="score" id="Cr1a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LE1d
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr1a-2">	LC1d	</span>
+					<span class="score" id="Cr1a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Er1b
+				Cr1b
 				<li class="team team-top">
-					LE1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr1b-1">	LC1b	</span>
+					<span class="score" id="Cr1b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LE1c
-					<span class="score">	&nbsp;	</span>
+					<span id="Cr1b-2">  LC1c	</span>
+					<span class="score" id="Cr1b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
-			<!-- Pool F	 -->	
+			<!-- Pool D	 -->	
 			<ul class="matchup">
-				F2a
+				D2a
 				<li class="team team-top">
-					WF1a
-					<span class="score">	&nbsp;	</span>
+					<span id="D2a-1">	WD1a	</span>
+					<span class="score" id="D2a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WF1d
-					<span class="score">	&nbsp;	</span>
+					<span id="D2a-2">	WD1d	</span>
+					<span class="score" id="D2a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				F2b
+				D2b
 				<li class="team team-top">
-					WF1b
-					<span class="score">	&nbsp;	</span>
+					<span id="D2b-1">	WD1b	</span>
+					<span class="score" id="D2b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					WF1c
-					<span class="score">	&nbsp;	</span>
+					<span id="D2b-2">	WD1c	</span>
+					<span class="score" id="D2b-2-score">	&nbsp;	</span>
 				</li>
 			</ul>		
 			<ul class="matchup">
-				Fr1a
+				Dr1a
 				<li class="team team-top">
-					LF1a
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr1a-1">	LD1a	</span>
+					<span class="score" id="Dr1a-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LF1d
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr1a-2">	LD1d	</span>
+					<span class="score" id="Dr1a-2-score">	&nbsp;	</span>
 				</li>
 			</ul>	
 			<ul class="matchup">
-				Fr1b
+				Dr1b
 				<li class="team team-top">
-					LF1b
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr1b-1">	LD1b	</span>
+					<span class="score" id="Dr1b-1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">
-					LF1c
-					<span class="score">	&nbsp;	</span>
+					<span id="Dr1b-2">  LD1c	</span>
+					<span class="score" id="Dr1b-2-score">	&nbsp;	</span>
 				</li>
-			</ul>
-			<!-- Pool G	 -->	
-			<ul class="matchup">
-				G2a
-				<li class="team team-top">
-					WG1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WG1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				G2b
-				<li class="team team-top">
-					WG1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WG1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<ul class="matchup">
-				Gr1a
-				<li class="team team-top">
-					LG1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LG1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Gr1b
-				<li class="team team-top">
-					LG1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LG1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<!-- Pool H	 -->
-			<ul class="matchup">
-				H2a
-				<li class="team team-top">
-					WH1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WH1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				H2b
-				<li class="team team-top">
-					WH1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					WH1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>		
-			<ul class="matchup">
-				Hr1a
-				<li class="team team-top">
-					LH1a
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LH1d
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-			<ul class="matchup">
-				Hr1b
-				<li class="team team-top">
-					LH1b
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">
-					LH1c
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>								
+			</ul>			
 		</div>	
-		<!-- ENH ROUNH 2 -->
+		<!-- ENH ROUND 2 -->
 
-		<!-- ROUNH 1 -->
+		<!-- ROUND 1 -->
 		<div class="round round-one current">
 			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
-
+			<!-- POOL C -->
 			<ul class="matchup">
-				E1a
+				C1a
 				<li class="team team-top">		
-					(E1) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="C1"> 	(C1)	</span>
+					<span class="score" id="C1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(E8) 	
-					<span class="score">    &nbsp;  </span>
+					<span id="C8"> 	(C8)	</span>
+					<span class="score" id="C8-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				E1b
+				C1b
 				<li class="team team-top">		
-					(E2) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="C2"> 	(C2)	</span>
+					<span class="score" id="C2-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(E7)		
-					<span class="score">	&nbsp;	</span>
+					<span id="C7"> 	(C7)	</span>
+					<span class="score" id="C7-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				E1c
+				C1c
 				<li class="team team-top">		
-					(E3)		
-					<span class="score">	&nbsp;	</span>
+					<span id="C3"> 	(C3)	</span>
+					<span class="score" id="C3-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(E6)		
-					<span class="score">	&nbsp;	</span>
+					<span id="C6"> 	(C6)	</span>
+					<span class="score" id="C6-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				E1d
+				C1d
 				<li class="team team-top">		
-					(E4)	
-					<span class="score">	&nbsp;	</span>
+					<span id="C4"> 	(C4)	</span>
+					<span class="score" id="C4-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(E5)	
-					<span class="score">	&nbsp;	</span>
+					<span id="C5"> 	(C5)	</span>
+					<span class="score" id="C5-score">	&nbsp;	</span>
 				</li>
 			</ul>		
-
+			<!-- POOL D -->
 			<ul class="matchup">
-				F1a
+				D1a
 				<li class="team team-top">		
-					(F1) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="D1"> 	(D1)	</span>
+					<span class="score" id="D1-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(F8) 	
-					<span class="score">    &nbsp;  </span>
+					<span id="D8"> 	(D8)	</span>
+					<span class="score" id="D8-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				F1b
+				D1b
 				<li class="team team-top">		
-					(F2) 	
-					<span class="score">	&nbsp;	</span>
+					<span id="D2"> 	(D2)	</span>
+					<span class="score" id="D2-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(F7)		
-					<span class="score">	&nbsp;	</span>
+					<span id="D7"> 	(D7)	</span>
+					<span class="score" id="D7-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				F1c
+				D1c
 				<li class="team team-top">		
-					(F3)		
-					<span class="score">	&nbsp;	</span>
+					<span id="D3"> 	(D3)	</span>
+					<span class="score" id="D3-score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">	
-					(F6)		
-					<span class="score">	&nbsp;	</span>
+					<span id="D6"> 	(D6)	</span>
+					<span class="score" id="D6-score">	&nbsp;	</span>
 				</li>
 			</ul>
 
 			<ul class="matchup">
-				F1d
-				<li class="team team-top">		
-					(F4)	
-					<span class="score">	&nbsp;	</span>
+				D1d
+				<li class="team team-top">	
+					<span id="D4"> 	(D4)	</span>
+					<span class="score" id="D4-score">	&nbsp;	</span>	
 				</li>
 				<li class="team team-bottom">	
-					(F5)	
-					<span class="score">	&nbsp;	</span>
+					<span id="D5"> 	(D5)	</span>
+					<span class="score" id="D5-score">	&nbsp;	</span>
 				</li>
-			</ul>	
-
-			<ul class="matchup">
-				G1a
-				<li class="team team-top">		
-					(G1) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(G8) 	
-					<span class="score">    &nbsp;  </span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				G1b
-				<li class="team team-top">		
-					(G2) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(G7)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				G1c
-				<li class="team team-top">		
-					(G3)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(G6)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-
-			<ul class="matchup">
-				G1d
-				<li class="team team-top">		
-					(G2)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(G5)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				H1a
-				<li class="team team-top">		
-					(H1)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(H8)	
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>	
-
-			<ul class="matchup">
-				H1b
-				<li class="team team-top">		
-					(H2) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(H7) 	
-					<span class="score">    &nbsp;  </span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				H1c
-				<li class="team team-top">		
-					(H3) 	
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(H6)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>
-
-			<ul class="matchup">
-				H1d
-				<li class="team team-top">		
-					(H4)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-				<li class="team team-bottom">	
-					(H5)		
-					<span class="score">	&nbsp;	</span>
-				</li>
-			</ul>											
+			</ul>								
 		</div>	
 		<!-- END ROUND 1 -->
 
