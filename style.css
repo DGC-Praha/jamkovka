@@ -18,7 +18,7 @@ body {font-family: 'Istok Web', sans-serif;background: #013c98;margin: 0;}
 .split-one .round {margin: 0 2.5% 0 0;}
 .split-two .round {margin: 0 0 0 2.5%;}
 .matchup {margin:0;width: 100%;padding: 10px 0;height:60px;-webkit-transition: all 0.2s;transition: all 0.2s;}
-.score {font-size: 11px;text-transform: uppercase;float: right;color: #2C7399;font-weight: bold;font-family: 'Roboto Condensed', sans-serif;position: absolute;right: 5px; background-color: #fff;}
+.score {font-size: 11px;text-transform: uppercase;float: right;color: #2C7399;font-weight: bold;font-family: 'Roboto Condensed', sans-serif;position: absolute;right: 5px; background-color: inherit;}
 .team {padding: 0 5px;margin: 3px 0;height: 25px; line-height: 25px;white-space: nowrap; overflow: hidden;position: relative;}
 .round-two .matchup {margin:0; height: 60px;padding: 50px 0;}
 .round-three .matchup {margin:0; height: 60px; padding: 130px 0;}
@@ -43,6 +43,7 @@ h2 a.inactive {color: #fff; background-color: #144189;}
 .regform-link:hover {background-color: #0056e1; color: #c4c4c4;}
 .text-center {text-align: center;}
 .qr-payment {width: 18em; max-width: 60%;}
+.winner {background-color: rgb(196, 255, 209) !important;}
 
 @-webkit-keyframes pulse {
   0% {

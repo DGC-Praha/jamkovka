@@ -806,6 +806,7 @@
 		$.each(data, function(key, val) {
 			$('#' + key).text(val[0]);
 			$('#' + key).next().text(val[1]);
+			$('#' + key).parent().addClass(val[2])
 		});
 	});
 </script>
