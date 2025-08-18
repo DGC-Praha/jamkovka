@@ -59,7 +59,7 @@ body {
 }
 
 #bracket {
-  overflow: hidden;
+  overflow: auto;
   background-color: #e1e1e1;
   background-color: rgba(225, 225, 225, 0.9);
   padding-top: 20px;
@@ -88,6 +88,8 @@ body {
 }
 
 .split {
+  padding-bottom: 50px;
+  margin: auto;
   display: block;
   float: left;
   display: -webkit-box;
@@ -95,7 +97,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 50%;
+  width: 90%;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   flex-direction: row;
@@ -378,7 +380,7 @@ h2 a.inactive {
   }
 
   .split {
-    width: 43%;
+    width: 96%;
   }
 
   .split-one .vote-box {
