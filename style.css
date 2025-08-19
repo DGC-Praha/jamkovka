@@ -445,10 +445,6 @@ h2 a.inactive {
     margin: 25px 2.5%;
   }
 
-  .round {
-    width: 14%;
-  }
-
   .current {
     -webkit-flex-grow: 1;
     -moz-flex-grow: 1;
