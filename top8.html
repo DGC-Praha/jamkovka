@@ -60,7 +60,7 @@
 					<span class="score">	&nbsp;	</span>
 				</li>
 				<li class="team team-bottom">   
-					<span id="QFb2">C2</span>
+					<span id="QFb-2">C2</span>
 					<span class="score">	&nbsp;	</span>
 				</li>
 			</ul>	
@@ -159,6 +159,7 @@
 		$.each(data, function(key, val) {
 			$('#' + key).text(val[0]);
 			$('#' + key).next().text(val[1]);
+			$('#' + key).parent().addClass(val[2])
 		});
 	});
 </script>
