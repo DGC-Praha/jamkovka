@@ -1,5 +1,5 @@
 :root{
-  --base-hue: 190;
+  --base-hue: 217;
   --color-dark: hsl(var(--base-hue), 99%, 30%);
   --color-text-brackets: hsl(var(--base-hue), 55%, 39%);
   --color-darker: hsl(var(--base-hue), 75%, 31%);
