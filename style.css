@@ -1,8 +1,9 @@
 :root{
-  --color-dark: #013c98;
-  --color-text-brackets: #2C7399;
-  --color-darker: #144189;
-  --color-lighter: #0056e1;
+  --base-hue: 190;
+  --color-dark: hsl(var(--base-hue), 99%, 30%);
+  --color-text-brackets: hsl(var(--base-hue), 55%, 39%);
+  --color-darker: hsl(var(--base-hue), 75%, 31%);
+  --color-lighter: hsl(var(--base-hue), 100%, 35%);
 }
 
 body {
