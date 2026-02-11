@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	api_endpoint = 'https://script.google.com/macros/s/AKfycbyzTal6vX3nenAu7UGIvVHazGCPrhfog1KDinTlOXs7LsoWC8wklBPRsN9dlzvDxRJ7/exec';
+
+	$.getJSON(api_endpoint, function(data) {
+		$('.spinner').remove();
+		counter = 1;
+
+		let row = "<tr><th></th><th>Jméno</th><th>Rating</th><th>Placeno</th></tr>";
+		$('#registered-players-table').append(row);
+
+		$.each(data, function(key, val) {
+			if (key.startsWith("registered-player")) {
+				let row = `<tr>
+					<td>${counter}</td>
+					<td>${val[0]}</td>
+					<td class='text-center'>${val[1]}</td>
+					<td class='text-center'>${val[2] ? '<i class="fa fa-check"></i>' : ''}</td>
+				</tr>`;
+				$('#registered-players-table').append(row);
+				counter++;
+			}
+		});
+	});
+</script>
