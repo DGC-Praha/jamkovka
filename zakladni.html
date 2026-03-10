@@ -1,0 +1,280 @@
+---
+layout: brackets
+title: DGCP Jamkovka 2026
+footer_scripts: script_phase_1.html
+---
+
+	<div class="spinner text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+
+	<div class="container">
+	<div class="split split-one">
+
+		<!-- ROUND 1 -->
+		<div class="round round-one current">
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1"></span></div>
+			<!-- Pool A	 -->
+			{% include matchup.html id="A1a" id1="A1" id2="A8" %}
+			{% include matchup.html id="A1b" id1="A2" id2="A7" %}
+			{% include matchup.html id="A1c" id1="A3" id2="A6" %}
+			{% include matchup.html id="A1d" id1="A4" id2="A5" %}
+									
+		</div>	
+		<!-- END ROUND 1 -->
+
+		<!-- ROUND 2 -->
+		<div class="round round-one current">
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2"></span></div>		
+			<!-- Pool A	 -->
+			{% include matchup.html id="A2a" id1="W-A1a" id2="W-A1d" %}
+			{% include matchup.html id="A2b" id1="W-A1b" id2="W-A1c" %}
+			{% include matchup.html id="Ar1a" id1="L-A1d" id2="L-A1a" %}
+			{% include matchup.html id="Ar1b" id1="L-A1c" id2="L-A1b" %}
+		</div>	
+		<!-- END ROUND 2 -->
+		
+		<!-- ROUND 2 REPAIRS -->
+		<div class="round round-one current">
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs"></span></div>	
+			<!-- Pool A		 -->
+			{% include matchup_hidden.html %}	
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Ar2a" id1="L-A2a" id2="W-Br1a" %}
+			{% include matchup.html id="Ar2b" id1="L-A2b" id2="W-Br1b" %}
+		</div>	
+		<!-- END ROUND 2 REPAIRS -->	
+		
+		<!-- ROUND 3 -->
+		<div class="round round-two current">
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3"></span></div>	
+			<!-- Pool A	 -->
+			{% include matchup.html id="A3" id1="W-A2a" id2="W-A2b" %}
+			{% include matchup.html id="Ar3" id1="W-Ar2a" id2="W-Ar2b" %}
+		</div>	
+		<!-- END ROUND 3 -->	
+		
+		<!-- ROUND 3 REPAIRS -->
+		<div class="round round-two current">
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs"></span></div>	
+			<!-- Pool A		 -->
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Ar4" id1="L-A3" id2="W-Cr3" %}
+		</div>	
+		<!-- END ROUND 3 REPAIRS -->	
+		
+		<!-- STAGE 1 ADVANCES -->
+		<div class="round round-two current">
+			<div class="round-details">Postupující<br/><span class="date"></span></div>	
+			<!-- Pool A	 -->		
+			{% include matchup_hidden_top.html id1="W-A3" %}	
+			{% include matchup_hidden_top.html id1="W-Ar4" %}	
+		</div>	
+		<!-- END ADVANCES -->	
+	</div> 
+	</div>
+	<!-- END POOL A -->
+
+	<!-- POOL B -->
+	<div class="container"> 
+	<div class="split split-one">	
+
+		<!-- ROUND 1 -->
+		<div class="round round-one current">
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1"></span></div>
+			<!-- Pool B	 -->
+			{% include matchup.html id="B1a" id1="B1" id2="B8" %}
+			{% include matchup.html id="B1b" id1="B2" id2="B7" %}
+			{% include matchup.html id="B1c" id1="B3" id2="B6" %}
+			{% include matchup.html id="B1d" id1="B4" id2="B5" %}
+		</div>
+		<!-- END ROUND 1 -->
+
+		<!-- ROUND 2 -->
+		<div class="round round-one current">
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2"></span></div>		
+			<!-- Pool B	 -->	
+			{% include matchup.html id="B2a" id1="W-B1a" id2="W-B1d" %}
+			{% include matchup.html id="B2b" id1="W-B1b" id2="W-B1c" %}
+			{% include matchup.html id="Br1a" id1="L-B1d" id2="L-B1a" %}
+			{% include matchup.html id="Br1b" id1="L-B1c" id2="L-B1b" %}
+		</div>	
+		<!-- END ROUND 2 -->	
+		
+		<!-- ROUND 2 REPAIRS -->
+		<div class="round round-one current">
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs"></span></div>	
+			<!-- Pool B		 -->
+			{% include matchup_hidden.html %}	
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Br2a" id1="L-B2a" id2="W-Ar1a" %}
+			{% include matchup.html id="Br2b" id1="L-B2b" id2="W-Ar1b" %}	
+		</div>	
+		<!-- END ROUND 2 REPAIRS -->	
+		
+		<!-- ROUND 3 -->
+		<div class="round round-two current">
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3"></span></div>	
+			<!-- Pool B	 -->
+			{% include matchup.html id="B3" id1="W-B2a" id2="W-B2b" %}
+			{% include matchup.html id="Br3" id1="W-Br2a" id2="W-Br2b" %}		
+		</div>	
+		<!-- END ROUND 3 -->	
+		
+		<!-- ROUND 3 REPAIRS -->
+		<div class="round round-two current">
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs"></span></div>	
+			<!-- POOL B -->
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Br4" id1="L-B3" id2="W-Dr3" %}
+		</div>	
+		<!-- END ROUND 3 REPAIRS -->	
+		
+		<!-- STAGE 1 ADVANCES -->		
+		<div class="round round-two current">
+			<div class="round-details">Postupující<br/><span class="date"></span></div>	
+			<!-- Pool B	 -->
+			{% include matchup_hidden_top.html id1="W-B3" %}	
+			{% include matchup_hidden_top.html id1="W-Br4" %}
+		</div>	
+	<!-- END ADVANCES -->
+
+	</div>
+	</div> 
+	<!-- END POOL B -->
+
+	<!-- POOL C -->
+	<div class="container">
+	<div class="split split-one">	
+		<!-- ROUND 1 -->
+		<div class="round round-one current">
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
+			<!-- POOL C -->
+			{% include matchup.html id="C1a" id1="C1" id2="C8" %}
+			{% include matchup.html id="C1b" id1="C2" id2="C7" %}
+			{% include matchup.html id="C1c" id1="C3" id2="C6" %}
+			{% include matchup.html id="C1d" id1="C4" id2="C5" %}		
+		</div>	
+		<!-- END ROUND 1 -->
+		
+		
+		<!-- ROUND 2 -->
+		<div class="round round-one current">
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
+			<!-- Pool C	 -->
+			{% include matchup.html id="C2a" id1="W-C1a" id2="W-C1d" %}
+			{% include matchup.html id="C2b" id1="W-C1b" id2="W-C1c" %}
+			{% include matchup.html id="Cr1a" id1="L-C1d" id2="L-C1a" %}
+			{% include matchup.html id="Cr1b" id1="L-C1c" id2="L-C1b" %}
+		</div>	
+		<!-- ENH ROUND 2 -->
+		
+		 
+		<!-- ROUND 2 REPAIRS -->
+		<div class="round round-one current">
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
+			<!-- Pool C		 -->
+			{% include matchup_hidden.html %}	
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Cr2a" id1="L-C2a" id2="W-Dr1a" %}
+			{% include matchup.html id="Cr2b" id1="L-C2b" id2="W-Dr1b" %}
+		</div>	
+		<!-- ENH ROUND 2 REPAIRS -->	
+
+
+		<!-- ROUND 3 -->
+		<div class="round round-two current">
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-2"></span></div>	
+			<!-- Pool C	 -->
+			{% include matchup.html id="C3" id1="W-C2a" id2="W-C2b" %}
+			{% include matchup.html id="Cr3" id1="W-Cr2a" id2="W-Cr2b" %}		
+		</div>	
+		<!-- END ROUND 3 -->
+
+		<!-- ROUND 3 REPAIRS -->
+		<div class="round round-two current">
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
+			<!-- Pool C	 -->		
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Cr4" id1="L-C3" id2="W-Ar3" %}	
+		</div>	
+		<!-- END ROUND 3 REPAIRS -->
+		
+		<!-- STAGE 1 ADVANCES -->
+		<div class="round round-two current">
+			<div class="round-details">Postupující<br/><span class="date"></span></div>	
+			<!-- Pool C	 -->	
+			{% include matchup_hidden_top.html id1="W-C3" %}	
+			{% include matchup_hidden_top.html id1="W-Cr4" %}	
+		</div>	
+		<!-- END ADVANCES -->	
+	</div>
+	</div>
+	<!-- END POOL C -->
+
+	<!-- POOL D -->
+	<div class="container">
+	<div class="split split-one">	
+		<!-- ROUND 1 -->
+		<div class="round round-one current">
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
+			<!-- POOL D -->
+			{% include matchup.html id="D1a" id1="D1" id2="D8" %}
+			{% include matchup.html id="D1b" id1="D2" id2="D7" %}
+			{% include matchup.html id="D1c" id1="D3" id2="D6" %}
+			{% include matchup.html id="D1d" id1="D4" id2="D5" %}
+		</div>	
+		<!-- END ROUND 1 -->	
+		
+		
+		<!-- ROUND 2 -->
+		<div class="round round-one current">
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
+			<!-- Pool D	 -->	
+			{% include matchup.html id="D2a" id1="W-D1a" id2="W-D1d" %}
+			{% include matchup.html id="D2b" id1="W-D1b" id2="W-D1c" %}
+			{% include matchup.html id="Dr1a" id1="L-D1d" id2="L-D1a" %}
+			{% include matchup.html id="Dr1b" id1="L-D1c" id2="L-D1b" %}		
+		</div>	
+		<!-- ENH ROUND 2 -->
+		
+		 
+		<!-- ROUND 2 REPAIRS -->
+		<div class="round round-one current">
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
+			<!-- Pool D		 -->
+			{% include matchup_hidden.html %}	
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Dr2a" id1="L-D2a" id2="W-Ar1a" %}
+			{% include matchup.html id="Dr2b" id1="L-D2b" id2="W-Ar1b" %}			
+		</div>	
+		<!-- ENH ROUND 2 REPAIRS -->	
+
+
+		<!-- ROUND 3 -->
+		<div class="round round-two current">
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-2"></span></div>	
+			<!-- Pool D	 -->
+			{% include matchup.html id="D3" id1="W-D2a" id2="W-D2b" %}
+			{% include matchup.html id="Dr3" id1="W-Dr2a" id2="W-Dr2b" %}
+		</div>	
+		<!-- END ROUND 3 -->
+
+		<!-- ROUND 3 REPAIRS -->
+		<div class="round round-two current">
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
+			<!-- POOL D -->
+			{% include matchup_hidden.html %}	
+			{% include matchup.html id="Dr4" id1="L-D3" id2="W-Br3" %}
+		</div>	
+		<!-- END ROUND 3 REPAIRS -->
+		
+		<!-- STAGE 1 ADVANCES -->
+		<div class="round round-two current">
+			<div class="round-details">Postupující<br/><span class="date"></span></div>	
+			<!-- Pool D	 -->
+			{% include matchup_hidden_top.html id1="W-D3" %}	
+			{% include matchup_hidden_top.html id1="W-Dr4" %}	
+		</div>	
+		<!-- END ADVANCES -->	
+	</div>
+	</div>
+	<!-- END POOL D -->

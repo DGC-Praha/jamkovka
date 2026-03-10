@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    api_endpoint = 'https://script.google.com/macros/s/AKfycbzMYt4IvetNwnioNAg6zz1NKbiejfmQXuRIvVJgVdKL3UeiKPrJeDXfOdthS5RJwJqT/exec';
+	
+	$.getJSON(api_endpoint, function(data) {
+		$('.spinner').remove();
+
+		$.each(data, function(key, val) {
+			$('#' + key).text(val[0]);
+			$('#' + key).next().text(val[1]);
+			$('#' + key).parent().addClass(val[2])
+		});
+	});
+</script>
