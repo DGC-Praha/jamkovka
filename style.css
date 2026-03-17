@@ -63,7 +63,8 @@ body {
 
 .hero img {
   max-width: 40%;
-  height: 8em;
+  max-height: 8em;
+  height: auto;
 }
 
 #bracket {
