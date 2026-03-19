@@ -309,6 +309,24 @@ h2 a.inactive {
   color: #c4c4c4;
 }
 
+.tabs {
+  background-color: var(--color-dark);
+  display: inline-block;
+}
+
+.tabs-link {
+  display: inline-block;
+  background-color: var(--color-dark);
+  color: #fff;
+  padding: 7px 12px;
+  text-decoration: none;
+}
+
+.tabs-link:hover {
+  background-color: var(--color-lighter);
+  color: #c4c4c4;
+}
+
 .text-center {
   text-align: center;
 }

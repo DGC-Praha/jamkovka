@@ -4,9 +4,20 @@ title: DGCP Jamkovka 2026
 footer_scripts: script_phase_1.html
 ---
 
-	<div class="spinner text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>
+	<div class="text-center">
+	<div class="tabs">
+		<a class="tabs-link" onclick="openPool('pool-a')">Skupina A</a>
+		<a class="tabs-link" onclick="openPool('pool-b')">Skupina B</a>
+		<a class="tabs-link" onclick="openPool('pool-c')">Skupina C</a>
+		<a class="tabs-link" onclick="openPool('pool-d')">Skupina D</a>
+		<a class="tabs-link" onclick="openPool('top-8')">Top 8</a>
+		<a class="tabs-link" onclick="openPool('all')">Všechny skupiny</a>
+    </div>
+	</div>
 
-	<div class="container">
+	<div class="spinner text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i> Nahrávám výsledky...</div>
+
+	<div class="container bracket-pool" id="pool-a">
 	<div class="split split-one">
 
 		<!-- ROUND 1 -->
@@ -74,12 +85,12 @@ footer_scripts: script_phase_1.html
 	<!-- END POOL A -->
 
 	<!-- POOL B -->
-	<div class="container"> 
+	<div class="container bracket-pool" id="pool-b"> 
 	<div class="split split-one">	
 
 		<!-- ROUND 1 -->
 		<div class="round round-one current">
-			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1"></span></div>
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
 			<!-- Pool B	 -->
 			{% include matchup.html id="B1a" id1="Bs1" id2="Bs8" %}
 			{% include matchup.html id="B1b" id1="Bs2" id2="Bs7" %}
@@ -90,7 +101,7 @@ footer_scripts: script_phase_1.html
 
 		<!-- ROUND 2 -->
 		<div class="round round-one current">
-			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2"></span></div>		
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
 			<!-- Pool B	 -->	
 			{% include matchup.html id="B2a" id1="W-B1a" id2="W-B1d" %}
 			{% include matchup.html id="B2b" id1="W-B1b" id2="W-B1c" %}
@@ -101,7 +112,7 @@ footer_scripts: script_phase_1.html
 		
 		<!-- ROUND 2 REPAIRS -->
 		<div class="round round-one current">
-			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs"></span></div>	
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
 			<!-- Pool B		 -->
 			{% include matchup_hidden.html %}	
 			{% include matchup_hidden.html %}	
@@ -121,7 +132,7 @@ footer_scripts: script_phase_1.html
 		
 		<!-- ROUND 3 REPAIRS -->
 		<div class="round round-two current">
-			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs"></span></div>	
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
 			<!-- POOL B -->
 			{% include matchup_hidden.html %}	
 			{% include matchup.html id="Br4" id1="L-B3" id2="W-Dr3" %}
@@ -142,11 +153,11 @@ footer_scripts: script_phase_1.html
 	<!-- END POOL B -->
 
 	<!-- POOL C -->
-	<div class="container">
+	<div class="container bracket-pool" id="pool-c">
 	<div class="split split-one">	
 		<!-- ROUND 1 -->
 		<div class="round round-one current">
-			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-3"></span></div>
 			<!-- POOL C -->
 			{% include matchup.html id="C1a" id1="Cs1" id2="Cs8" %}
 			{% include matchup.html id="C1b" id1="Cs2" id2="Cs7" %}
@@ -158,7 +169,7 @@ footer_scripts: script_phase_1.html
 		
 		<!-- ROUND 2 -->
 		<div class="round round-one current">
-			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-3"></span></div>		
 			<!-- Pool C	 -->
 			{% include matchup.html id="C2a" id1="W-C1a" id2="W-C1d" %}
 			{% include matchup.html id="C2b" id1="W-C1b" id2="W-C1c" %}
@@ -170,7 +181,7 @@ footer_scripts: script_phase_1.html
 		 
 		<!-- ROUND 2 REPAIRS -->
 		<div class="round round-one current">
-			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-3"></span></div>	
 			<!-- Pool C		 -->
 			{% include matchup_hidden.html %}	
 			{% include matchup_hidden.html %}	
@@ -182,7 +193,7 @@ footer_scripts: script_phase_1.html
 
 		<!-- ROUND 3 -->
 		<div class="round round-two current">
-			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-2"></span></div>	
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-3"></span></div>	
 			<!-- Pool C	 -->
 			{% include matchup.html id="C3" id1="W-C2a" id2="W-C2b" %}
 			{% include matchup.html id="Cr3" id1="W-Cr2a" id2="W-Cr2b" %}		
@@ -191,7 +202,7 @@ footer_scripts: script_phase_1.html
 
 		<!-- ROUND 3 REPAIRS -->
 		<div class="round round-two current">
-			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-3"></span></div>	
 			<!-- Pool C	 -->		
 			{% include matchup_hidden.html %}	
 			{% include matchup.html id="Cr4" id1="L-C3" id2="W-Ar3" %}	
@@ -211,11 +222,11 @@ footer_scripts: script_phase_1.html
 	<!-- END POOL C -->
 
 	<!-- POOL D -->
-	<div class="container">
+	<div class="container bracket-pool" id="pool-d">
 	<div class="split split-one">	
 		<!-- ROUND 1 -->
 		<div class="round round-one current">
-			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-2"></span></div>
+			<div class="round-details">1. kolo<br/><span class="date" id="date-round-1-4"></span></div>
 			<!-- POOL D -->
 			{% include matchup.html id="D1a" id1="Ds1" id2="Ds8" %}
 			{% include matchup.html id="D1b" id1="Ds2" id2="Ds7" %}
@@ -227,7 +238,7 @@ footer_scripts: script_phase_1.html
 		
 		<!-- ROUND 2 -->
 		<div class="round round-one current">
-			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-2"></span></div>		
+			<div class="round-details">2. kolo<br/><span class="date" id="date-round-2-4"></span></div>		
 			<!-- Pool D	 -->	
 			{% include matchup.html id="D2a" id1="W-D1a" id2="W-D1d" %}
 			{% include matchup.html id="D2b" id1="W-D1b" id2="W-D1c" %}
@@ -239,7 +250,7 @@ footer_scripts: script_phase_1.html
 		 
 		<!-- ROUND 2 REPAIRS -->
 		<div class="round round-one current">
-			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-2"></span></div>	
+			<div class="round-details">Opravy 2. kola<br/><span class="date" id="date-round-2-repairs-4"></span></div>	
 			<!-- Pool D		 -->
 			{% include matchup_hidden.html %}	
 			{% include matchup_hidden.html %}	
@@ -251,7 +262,7 @@ footer_scripts: script_phase_1.html
 
 		<!-- ROUND 3 -->
 		<div class="round round-two current">
-			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-2"></span></div>	
+			<div class="round-details">3. kolo<br/><span class="date" id="date-round-3-4"></span></div>	
 			<!-- Pool D	 -->
 			{% include matchup.html id="D3" id1="W-D2a" id2="W-D2b" %}
 			{% include matchup.html id="Dr3" id1="W-Dr2a" id2="W-Dr2b" %}
@@ -260,7 +271,7 @@ footer_scripts: script_phase_1.html
 
 		<!-- ROUND 3 REPAIRS -->
 		<div class="round round-two current">
-			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-2"></span></div>	
+			<div class="round-details">Opravy 3. kola<br/><span class="date" id="date-round-3-repairs-4"></span></div>	
 			<!-- POOL D -->
 			{% include matchup_hidden.html %}	
 			{% include matchup.html id="Dr4" id1="L-D3" id2="W-Br3" %}
@@ -278,3 +289,44 @@ footer_scripts: script_phase_1.html
 	</div>
 	</div>
 	<!-- END POOL D -->
+
+	<!-- TOP 8 -->
+	<div class="container bracket-pool" id="top-8">
+	<div class="split split-one">
+
+	<!-- QF -->
+		<div class="round round-one current">
+			<div class="round-details">Čtvrtfinále<br/><span class="date" id="date-top8"></span></div>
+			{% include matchup.html id="QFa" id1="W-A3" id2="W-Dr4" %}
+			{% include matchup.html id="QFb" id1="W-B3" id2="W-Cr4" %}
+			{% include matchup.html id="QFc" id1="W-C3" id2="W-Br4" %}
+			{% include matchup.html id="QFd" id1="W-D3" id2="W-Ar4" %}
+		</div>
+	<!-- END QF -->
+	<!-- SF -->
+		<div class="round round-two current">
+			<div class="round-details">Semifinále<br/><span class="date" id="date-top4"></span></div>
+			{% include matchup.html id="SFa" id1="W-QFa" id2="W-QFb" %}
+			{% include matchup.html id="SFb" id1="W-QFc" id2="W-QFd" %}
+		</div>
+	<!-- END SF -->
+	<!-- SF -->
+		<div class="round round-three current">
+			<div class="round-details">Finále<br/><span class="date" id="date-final"></span></div>
+			{% include matchup.html id="F" id1="W-SFa" id2="W-SFb" %}
+		</div>
+	<!-- END SF -->
+
+<script>
+function openPool(poolName) {
+  var i;
+  var x = document.getElementsByClassName("bracket-pool");
+  for (i = 0; i < x.length; i++) {
+	if (poolName === "all" || x[i].id === poolName) {
+		x[i].style.display = "flex";
+	} else {
+    	x[i].style.display = "none";  
+	}
+  }
+}
+</script>
