@@ -6,9 +6,10 @@
 		$('.spinner').remove();
 
 		$.each(data, function(key, val) {
-			$('#' + key).text(val[0]);
-			$('#' + key).next().text(val[1]);
-			$('#' + key).parent().addClass(val[2])
+			var $els = $('[id="' + key + '"]');
+			$els.text(val[0]);
+			$els.next().text(val[1]);
+			$els.parent().addClass(val[2])
 		});
 	});
 </script>
